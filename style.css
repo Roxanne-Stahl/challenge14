@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+/* * * * || RESET * * * */
+* {
+    margin: 0;
+    padding: 0;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+input, button, textarea, select {
+    font: inherit;
+}
+
+/* * * * || VARIABLES * * * */
+:root {
+    /* FONTS */
+    --FONT-FAMILY: 'Kumbh Sans', sans-serif;
+    --FONT-400: 400;
+    --FONT-700: 700;
+
+    /* COLORS */
+    --DARK-CYAN:hsl(185, 75%, 39%);
+    --ALMOST-BLACK: #2d3248;    
+    --BLUE-GRAY: #6b7082;
+    --GRAY: #969696;
+    
+}
+
+/* * * * || GENERAL STYLES * * * */
+html, body {
+    height: 100%;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background: var(--DARK-CYAN);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: var(--FONT-FAMILY);
+    background-image: url(images/bg-pattern-top.svg), 
+                    url(images/bg-pattern-bottom.svg);
+    background-position: left -30em top -30em, 
+                    right -20em bottom -20em;
+    background-repeat: no-repeat;
+    
+}
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+} 
+
+.container {
+    margin-top: 10.8rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 22rem;
+    background: #FFFFFF;
+    box-shadow: 0px 50px 100px -20px rgba(8, 70, 94, 0.504835);
+    border-radius: 15px;
+}
+
+.background__pattern {
+    width: 22rem;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.user__image {
+    display: flex;
+    position: relative;
+    border: 5px solid #FFFFFF;
+    border-radius: 100px;    
+    margin-top: -3rem;
+    justify-content: center;
+    align-items: center;
+    margin-left: 7.9rem;
+    margin-right: 7.9rem;
+}
+.personal__info { 
+    text-align: center;
+    display: flex;
+    gap: .5rem;
+    margin-left: 7rem;
+}
+.name {
+    font-weight: var(--FONT-700);
+    font-size: 1.125rem;
+    color: var(--ALMOST-BLACK);
+}
+.age {
+    font-weight: var(--FONT-400);
+    font-size: 1.125rem;
+    color: var(--BLUE-GRAY);
+}
+.locations {
+    text-align: center;
+    color: var(--BLUE-GRAY);
+    font-weight: var(--FONT-400);
+    font-size: 0.875rem;
+}
+hr {
+    margin-top: 1.56rem;
+    border-top: 0.5px solid gainsboro;
+
+}
+.stats {
+    display: flex;
+    gap: 3rem;
+    padding-bottom: 1.5rem;
+    margin-left: 4rem;
+    width: 15.56rem;
+    margin-top: 1.5rem;
+}
+.numbers {
+    font-weight: var(--FONT-700);
+    font-size: 1.125rem;
+    text-align: center;
+    color: var(--ALMOST-BLACK);
+}
+.category {
+    font-weight: var(--FONT-400);
+    font-size: 0.625rem;
+    text-align: center;
+    color: var(--BLUE-GRAY);
+}
+/* * * * || FOOTER * * * */
+.attribution { 
+    margin-top: 4em;
+    font-size: 1rem; 
+    text-align: center; 
+    color: var(--ALMOST-BLACK);
+}
+.attribution a { 
+    text-decoration: none;
+    color: #FFFFFF; 
+}
+
+/* * * * || MEDIA QUERIES * * * */
+@media screen and (max-width: 1007px){
+    .container {
+        width: 20rem;
+    }
+    .user__image {
+        margin-left: 7rem;
+    }
+    .stats {
+        width: 14.56rem;
+        margin-left: 3.25rem;
+    }
+}
+@media screen and (min-width: 1008px){
+    
+}
